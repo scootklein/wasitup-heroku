@@ -1,0 +1,14 @@
+cnn:
+  url: http://www.cnn.com
+  method: GET
+  contains: Turner Broadcasting System
+  email: true
+  sms: false
+
+foxnews:
+  url: http://www.foxnews.com
+  method: POST
+  data: lambda { return { :one => :two, :three => Time.now } }
+  doesntcontain: Balanced and Fair
+  email: true
+  sms: true
